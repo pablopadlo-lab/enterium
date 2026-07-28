@@ -302,20 +302,27 @@ footer a:hover{color:var(--ink)}
 }
 
 /* ---------- window section: the 29→51 shift moment (thesis.html) ---------- */
-.window .shift{display:flex;align-items:baseline;gap:3vw;margin-top:56px;flex-wrap:wrap}
+.window .shift{display:flex;align-items:baseline;gap:3vw;margin-top:56px;margin-left:clamp(0px,6vw,90px);flex-wrap:wrap}
 .window .shift-from{font-family:var(--mono);font-size:clamp(40px,6vw,80px);font-weight:600;
-  color:var(--muted-on-dark);opacity:.55;letter-spacing:-.03em;line-height:1}
+  color:var(--muted-on-dark);opacity:.55;letter-spacing:-.03em;line-height:1;
+  transition:opacity 1.1s cubic-bezier(.2,.7,.2,1) .5s}
+.window .shift.in .shift-from{opacity:.3}
 .window .shift-arrow{font-family:var(--mono);font-size:clamp(36px,5vw,64px);
   color:var(--accent-soft);line-height:1;flex:none}
-.window .shift-to{font-family:var(--mono);font-size:clamp(96px,15vw,192px);font-weight:600;
+.window .shift.in .shift-arrow{animation:shiftArrowIn .6s cubic-bezier(.16,1,.3,1) .45s both}
+.window .shift-to{font-family:var(--mono);font-size:clamp(110px,16vw,216px);font-weight:600;
   color:#fff;letter-spacing:-.04em;line-height:.95}
+.window .shift.in .shift-to{animation:shiftPop .8s cubic-bezier(.16,1,.3,1) .15s both}
+@keyframes shiftPop{from{transform:translateY(18px) scale(1.04);opacity:0}to{transform:none;opacity:1}}
+@keyframes shiftArrowIn{from{transform:translateX(-12px);opacity:0}to{transform:none;opacity:1}}
 .window .shift-cap{font-family:var(--mono);font-size:12px;color:var(--muted-on-dark);
-  letter-spacing:1.2px;margin-top:18px}
+  letter-spacing:1.2px;margin-top:18px;margin-left:clamp(0px,6vw,90px)}
 .window .window-foot{display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;margin-top:52px;
   padding-top:24px;border-top:1px solid var(--dark-line);
   font-size:14px;color:var(--muted-on-dark);line-height:1.6}
 .window .window-foot b{color:var(--txt-on-dark);font-family:var(--mono);font-weight:600}
 @media(max-width:768px){
-  .window .shift{gap:16px;margin-top:40px}
+  .window .shift{gap:16px;margin-top:40px;margin-left:0}
+  .window .shift-cap{margin-left:0}
   .window .window-foot{grid-template-columns:1fr}
 }
