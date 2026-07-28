@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Enterium — Be in the answer your buyers read">
+  <rect width="1200" height="630" fill="#ffffff"/>
+
+  <!-- hairline frame -->
+  <rect x="32" y="32" width="1136" height="566" fill="none" stroke="#e4e7ec" stroke-width="1"/>
+
+  <!-- soft accent wash, top right -->
+  <circle cx="1050" cy="120" r="320" fill="#eef0fe"/>
+
+  <!-- brand mark -->
+  <rect x="88" y="96" width="52" height="52" rx="14" fill="#4338ca"/>
+  <circle cx="114" cy="122" r="9" fill="#ffffff"/>
+
+  <text x="88" y="236" font-family="'Geist Mono',ui-monospace,monospace" font-size="20" letter-spacing="4" fill="#4338ca">GEO / AI-VISIBILITY, ENGINEERED</text>
+
+  <text x="86" y="348" font-family="'Geist','Segoe UI',system-ui,sans-serif" font-size="96" font-weight="600" letter-spacing="-3" fill="#0b1220">Enterium</text>
+
+  <text x="88" y="432" font-family="'Geist','Segoe UI',system-ui,sans-serif" font-size="42" font-weight="500" letter-spacing="-0.5" fill="#4338ca">Be in the answer your buyers read.</text>
+
+  <text x="88" y="546" font-family="'Geist Mono',ui-monospace,monospace" font-size="18" letter-spacing="1.5" fill="#6b7484">HALF OF B2B BUYERS NOW START VENDOR RESEARCH IN AN AI CHATBOT.</text>
+  <text x="88" y="576" font-family="'Geist Mono',ui-monospace,monospace" font-size="18" letter-spacing="1.5" fill="#6b7484">FIXED SCOPE &#183; FIXED PRICE &#183; KILL CRITERIA IN WRITING</text>
+</svg>

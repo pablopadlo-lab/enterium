@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Placeholder domain — replace with the production domain at deploy time (see README.md).
+Sitemap: https://pablopadlo-lab.github.io/enterium/sitemap.xml
